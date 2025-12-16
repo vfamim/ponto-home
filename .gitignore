@@ -1,0 +1,13 @@
+node_modules
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+dist
+.env
+.DS_Store
+/backend/node_modules
+/backend/dist
+/frontend/node_modules
+/frontend/dist
+/frontend/.vite
+/backend/prisma/dev.db
