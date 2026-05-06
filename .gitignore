@@ -1,13 +1,37 @@
+# Dependencies
 node_modules
-pnpm-lock.yaml
+**/node_modules
+
+# Lock files (pnpm only)
 package-lock.json
 yarn.lock
+
+# Build output
 dist
+**/dist
+.expo
+**/.expo
+web-build
+*.tsbuildinfo
+
+# Environment
 .env
+.env.local
+.env.*.local
+**/.env
+**/.env.local
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
 .DS_Store
-/backend/node_modules
-/backend/dist
-/frontend/node_modules
-/frontend/dist
-/frontend/.vite
-/backend/prisma/dev.db
+
+# Supabase
+supabase/.temp
+
+# Mobile specific
+apps/mobile/.eas
+apps/mobile/ios
+apps/mobile/android
