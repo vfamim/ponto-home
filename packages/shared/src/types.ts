@@ -25,6 +25,10 @@ export interface TimeLog {
   log_source: LogSource;
   logged_at: string;
   qr_code_value: string;
+  location_latitude: number | null;
+  location_longitude: number | null;
+  location_accuracy_meters: number | null;
+  location_captured_at: string | null;
   photo_path: string | null;
   photo_skipped_reason: string | null;
   synced: boolean;

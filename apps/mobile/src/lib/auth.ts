@@ -7,6 +7,7 @@ export interface WorkerSession {
   userId: string;
   fullName: string;
   bossId: string;
+  pin: string;
 }
 
 export async function signInWithPin(pin: string): Promise<WorkerSession> {
@@ -37,6 +38,7 @@ export async function signInWithPin(pin: string): Promise<WorkerSession> {
       userId: row.user_id,
       fullName: row.full_name,
       bossId: row.boss_id,
+      pin,
     };
 
     console.log('✅ [AUTH] Login sucesso! Salvando sessão:', session);

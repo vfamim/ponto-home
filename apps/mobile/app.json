@@ -21,7 +21,10 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.ponto.home"
+      "bundleIdentifier": "com.ponto.home",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Usamos sua localizacao para validar o registro de ponto."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -31,7 +34,8 @@
       "package": "com.ponto.home",
       "permissions": [
         "CAMERA",
-        "RECORD_AUDIO",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
         "READ_EXTERNAL_STORAGE",
         "WRITE_EXTERNAL_STORAGE"
       ]
